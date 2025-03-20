@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./auth.css">
+</head>
+<body>
+    <div class="container">
+        <img class="movie_icon" src="../images/movie-icon.svg" alt="movie-icon">
+        <section class="auth_wrapper">
+            <h2 class="auth_wrapper_title">Login</h2>
+            <form id="login_form" class="auth_wrapper_form">
+                <div class=" auth_wrapper_form_wrapper auth_wrapper_form_email_wrapper">
+                    <input class="auth_wrapper_form_wrapper_input" type="email" placeholder="Email address">
+                    <span class="auth_wrapper_form_wrapper_warning"></span>
+                </div>
+                <div class="auth_wrapper_form_wrapper auth_wrapper_form_password_wrapper">
+                    <input class="auth_wrapper_form_wrapper_input" type="password" placeholder="Password" minlength="8" maxlength="20">
+                    <span class="auth_wrapper_form_wrapper_warning"></span>
+                </div> 
+                <button class="auth_wrapper_form_btn" type="submit">Login to your account</button>
+            </form>
+            <div class="auth_wrapper_message">
+                <p class="auth_wrapper_message_text">Don’t have an account?</p>
+                <a class="auth_wrapper_message_link" href="signup.html">Sign Up</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

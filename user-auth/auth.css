@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #FC4747;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  background-color: #10141E;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8rem;
+  height: 100vh;
+  padding: 7rem;
+}
+.container .movie_icon {
+  width: 3.2rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .auth_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  width: 40rem;
+  padding: 3.2rem;
+  background-color: #161D2F;
+  border-radius: 2rem;
+}
+.container .auth_wrapper_title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .auth_wrapper_form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  position: relative;
+}
+.container .auth_wrapper_form_wrapper {
+  width: 100%;
+  position: relative;
+}
+.container .auth_wrapper_form_wrapper_input {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 0.1rem solid #5A698F;
+  padding-left: 1.6rem;
+  padding-bottom: 1.8rem;
+}
+.container .auth_wrapper_form_wrapper_input:focus {
+  border-bottom: 0.1rem solid #fff;
+}
+.container .auth_wrapper_form_wrapper_warning {
+  color: #FC4747;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 100%;
+  position: absolute;
+  right: 1rem;
+}
+.container .auth_wrapper_form_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  padding-block: 1.4rem;
+  transition: 0.4s;
+  background-color: #FC4747;
+  cursor: pointer;
+}
+.container .auth_wrapper_form_btn:hover {
+  background-color: #fff;
+  color: #10141E;
+}
+.container .auth_wrapper_form_successfully {
+  position: absolute;
+  color: #046f3d;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+  bottom: -3rem;
+  transform: translate(20%, 0%);
+}
+.container .auth_wrapper_message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+.container .auth_wrapper_message_text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .auth_wrapper_message_link {
+  color: #FC4747;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+}/*# sourceMappingURL=auth.css.map */

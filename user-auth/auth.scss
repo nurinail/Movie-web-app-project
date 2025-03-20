@@ -1,0 +1,81 @@
+@import "../styles/global";
+@import "../styles/_variables.scss";
+@import "../styles/_mixins.scss";
+
+
+.container {
+  background-color: $--container-bg-color;
+  @include d-flex(center, flex-start, column, 8rem);
+  height: 100vh;
+  padding: 7rem;
+  .movie_icon {
+    width: 3.2rem;
+    height: 2.5rem;
+    object-fit: cover;
+  }
+  .auth_wrapper {
+    @include d-flex(flex-start, flex-start, column, 4rem);
+    width: 40rem;
+    padding: 3.2rem;
+    background-color: $--section-bg-color;
+    border-radius: 2rem;
+    &_title {
+      @include font-style($--white-color, 3.2rem, 400, 100%);
+    }
+    &_form {
+      @include d-flex(flex-start, flex-start, column, 2.4rem);
+      width: 100%;
+      position: relative;
+      &_wrapper {
+        width: 100%;
+        position: relative;
+        &_input {
+          @include font-style($--white-color, 1.5rem, 400, 100%);
+          width: 100%;
+          background-color: transparent;
+          border-bottom: 0.1rem solid $--border-color;
+          padding-left: 1.6rem;
+          padding-bottom: 1.8rem;
+          &:focus {
+            border-bottom: 0.1rem solid $--white-color;
+          }
+        }
+        &_warning {
+          @include font-style($--button-color, 1.3rem, 400, 100%);
+          position: absolute;
+          right: 1rem;
+        }
+      }
+      &_btn {
+        @include font-style($--white-color, 1.5rem, 400, 100%);
+        width: 100%;
+        border-radius: 0.6rem;
+        padding-block: 1.4rem;
+        transition: .4s;
+        background-color: $--button-color;
+        cursor: pointer;
+      } 
+      &_btn:hover{
+        background-color: $--white-color;
+        color: $--container-bg-color;
+      }
+      
+      &_successfully {
+        position: absolute;
+        @include font-style($--successfully-color, 2rem, 400, 100%);
+        bottom: -3rem;
+        transform: translate(20%, 0%);
+      }
+    }
+    &_message {
+      @include d-flex(center, center, row, 1rem);
+      width: 100%;
+      &_text {
+        @include font-style($--white-color, 1.5rem, 400, 100%);
+      }
+      &_link {
+        @include font-style($--button-color, 1.5rem, 400, 100%);
+      }
+    }
+  }
+}

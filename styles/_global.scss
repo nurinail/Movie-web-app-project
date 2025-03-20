@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $--button-color;
+  }
+  li {
+    list-style: none;
+  }
+  input {
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+  }

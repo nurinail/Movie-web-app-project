@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #FC4747;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #10141E;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

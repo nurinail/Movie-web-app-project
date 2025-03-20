@@ -1,0 +1,15 @@
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/global";
+
+
+.container{
+    @include d-flex(flex-start,flex-start,row,1rem);    
+    background-color: $--container-bg-color;
+    height: 100vh;
+
+}
+
+
+
+
