@@ -28,6 +28,7 @@ input:focus {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -35,7 +36,282 @@ button {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 1rem;
+  gap: 3.6rem;
+  width: 100%;
   background-color: #10141E;
   height: 100vh;
+  padding: 3.2rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+}
+.container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 7rem;
+  background-color: #161D2F;
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 90%;
+  padding: 3.5rem 3.1rem;
+  border-radius: 2rem;
+  z-index: 10;
+}
+.container .navbar_movie_icon {
+  width: 3.2rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .navbar_menu {
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+}
+.container .navbar_menu_item_link_icon {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 3.5rem;
+}
+.container .main .searchForm {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+.container .main .searchForm_btn {
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.container .main .searchForm_btn_icon {
+  font-size: 2.8rem;
+  color: #fff;
+}
+.container .main .searchForm_input {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+  background-color: transparent;
+  width: 100%;
+}
+.container .main .searchForm_input::-moz-placeholder {
+  color: #87898e;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .main .searchForm_input::placeholder {
+  color: #87898e;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .main .trending_banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+.container .main .trending_banner_title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .main .trending_banner_movies {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.container .main .trending_banner_movies_item {
+  flex: 0 0 auto;
+  width: 32%;
+  height: 23rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 1rem;
+}
+.container .main .trending_banner_movies_item_opacity {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0;
+  padding: 2.4rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container .main .trending_banner_movies_item_opacity_save {
+  align-self: flex-end;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #161D2F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0;
+}
+.container .main .trending_banner_movies_item_opacity_save_btn_icon {
+  color: #fff;
+}
+.container .main .trending_banner_movies_item_opacity_about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.container .main .trending_banner_movies_item_opacity_about_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0;
+}
+.container .main .trending_banner_movies_item_opacity_about_info_item {
+  list-style-type: disc;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin-right: 2rem;
+}
+.container .main .trending_banner_movies_item_opacity_about_info_item:first-child {
+  list-style-type: none;
+}
+.container .main .trending_banner_movies_item_opacity_about_name {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .main .trending_banner_movies::-webkit-scrollbar {
+  display: none;
+}
+.container .main .recommended_banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+}
+.container .main .recommended_banner_title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.container .main .recommended_banner_movies {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.container .main .recommended_banner_movies_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0;
+  width: 19%;
+  height: 22.6rem;
+}
+.container .main .recommended_banner_movies_item_img {
+  width: 100%;
+  position: relative;
+}
+.container .main .recommended_banner_movies_item_img_item {
+  border-radius: 1rem;
+  width: 100%;
+  height: 17.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.container .main .recommended_banner_movies_item_img_bookmarkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: rgba(22, 29, 47, 0.6);
+  border-radius: 50%;
+}
+.container .main .recommended_banner_movies_item_img_bookmarkBtn_icon {
+  color: #fff;
+}
+.container .main .recommended_banner_movies_item_about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.container .main .recommended_banner_movies_item_about_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0;
+}
+.container .main .recommended_banner_movies_item_about_info_item {
+  list-style-type: disc;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin-right: 2rem;
+}
+.container .main .recommended_banner_movies_item_about_info_item:first-child {
+  list-style-type: none;
+}
+.container .main .recommended_banner_movies_item_about_name {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 100%;
 }/*# sourceMappingURL=style.css.map */

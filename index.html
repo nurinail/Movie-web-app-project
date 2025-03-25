@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/1a5bc9c570.js" crossorigin="anonymous"></script>
+
 </head>  
-<body>
+<body> 
      <div class="container">
         <nav class="navbar">
             <img class="navbar_movie_icon" src="images/movie-icon.svg" alt="movie-icon">
@@ -16,8 +18,60 @@
                 <li class="navbar_menu_item"><a class="navbar_menu_item_link" href="#"><img class="navbar_menu_item_link_icon" src="images/shape-tv-icon.svg" alt="icon"></a></li>
                 <li class="navbar_menu_item"><a class="navbar_menu_item_link" href="#"><img class="navbar_menu_item_link_icon" src="images/shape-save-icon.svg" alt="icon"></a></li>
             </ul> 
-            <img class="navbar_user_img" src="" alt="UserIcon">
+            <img class="navbar_user_img" src="images/user-icon.svg" alt="UserIcon">
         </nav> 
+        <main class="main">
+            <form class="searchForm" action="">
+                <button type="button" class="searchForm_btn"><i class="searchForm_btn_icon fa-solid fa-magnifying-glass"></i></button>
+                <input id="searchForm_input" class="searchForm_input" type="text" placeholder="Search for movies or TV series">
+            </form>  
+            <section class="trending_banner">
+                <h2 class="trending_banner_title">Trending</h2>
+                <div class="trending_banner_movies">
+                    <!-- <div class="trending_banner_movies_item" style="background-image: url(images/moviethumb.png)">
+                        <div class="trending_banner_movies_item_opacity">
+                            <div class="trending_banner_movies_item_opacity_save">
+                                <button class="trending_banner_movies_item_opacity_save_btn"><i class="trending_banner_movies_item_opacity_save_btn_icon fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="trending_banner_movies_item_opacity_about">
+                                <ul class="trending_banner_movies_item_opacity_about_info">
+                                    <li class="trending_banner_movies_item_opacity_about_info_item">2019</li>
+                                    <li class="trending_banner_movies_item_opacity_about_info_item"><i class="fa-solid fa-film"></i> Movie</li>
+                                    <li class="trending_banner_movies_item_opacity_about_info_item">PG</li>
+                                </ul>
+                                <h2 class="trending_banner_movies_item_opacity_about_name">Beyond Earth</h2>
+                            </div>
+
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </section>
+            <section class="recommended_banner">
+                <h2 class="recommended_banner_title">Recommended for you</h2>
+                <div class="recommended_banner_movies">
+                    <!-- <div class="recommended_banner_movies_item">
+                        <div class="recommended_banner_movies_item_img">
+                            <img class="recommended_banner_movies_item_img_item" src="images/moviethumb.png" alt="img">
+                            <button class="recommended_banner_movies_item_img_bookmarkBtn">
+                                <i class="recommended_banner_movies_item_img_bookmarkBtn_icon fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="recommended_banner_movies_item_about">
+                            <ul class="recommended_banner_movies_item_about_info">
+                                <li class="recommended_banner_movies_item_about_info_item">2019</li>
+                                <li class="recommended_banner_movies_item_about_info_item"><i class="fa-solid fa-film"></i> Movie</li>
+                                <li class="recommended_banner_movies_item_about_info_item">PG</li>
+                            </ul>
+                            <h2 class="recommended_banner_movies_item_about_name">Beyond Earth</h2>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </main>
      </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
