@@ -67,9 +67,6 @@ function getSignUp(e) {
     };
     users.push(userData);
     localStorage.setItem("users", JSON.stringify(users));
-    email.value = "";
-    password.value = "";
-    repeadPassword.value = "";
     successfullyWarning.innerHTML = "Account successfully created";
     setTimeout(() => {
       successfullyWarning.innerHTML = "";
