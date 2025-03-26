@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="sales.css">
     <script src="https://kit.fontawesome.com/1a5bc9c570.js" crossorigin="anonymous"></script>
 
-</head>  
-<body> 
-     <div class="container">  
+</head>
+<body>
+    <div class="container"> 
         <nav class="navbar">
             <img class="navbar_movie_icon" src="images/movie-icon.svg" alt="movie-icon">
             <ul  class="navbar_menu"> 
@@ -21,18 +21,14 @@
             <img class="navbar_user_img" src="images/user-icon.svg" alt="UserIcon">
         </nav>    
         <main class="main"> 
-            <form class="searchForm" action="">
-                <button type="button" class="searchForm_btn"><i class="searchForm_btn_icon fa-solid fa-magnifying-glass"></i></button>
-                <input id="searchForm_input" class="searchForm_input" type="text" placeholder="Search for movies or TV series">
-            </form>   
             <section class="recommended_banner">
-                <h2 class="recommended_banner_title">Recommended for you</h2>
-                <div class="index_banner_movies recommended_banner_movies">
+                <h2 class="recommended_banner_title">Save</h2>
+                <div id="saves_banner_movies" class="recommended_banner_movies">
                     <!-- <div class="recommended_banner_movies_item">
                         <div class="recommended_banner_movies_item_img">
                             <img class="recommended_banner_movies_item_img_item" src="images/moviethumb.png" alt="img">
                             <button class="recommended_banner_movies_item_img_bookmarkBtn">
-                                <i class="recommended_banner_movies_item_img_bookmarkBtn_icon fa-regular fa-bookmark"></i>
+                                <i class="recommended_banner_movies_item_img_bookmarkBtn_icon fa-solid fa-bookmark"></i>
                             </button>
                         </div>
                         <div class="recommended_banner_movies_item_about">
@@ -49,7 +45,6 @@
         </main>
      </div>
 
-    <script src="main.js" type="module"></script>
-
+     <script src="./saves.js"></script>
 </body>
 </html>

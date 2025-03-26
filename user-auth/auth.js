@@ -12,7 +12,7 @@ function getSignUp(e) {
   );
   const emailWarning = document.getElementById(
     "auth_wrapper_form_email_warning"
-  );
+  ); 
   const passwordWarning = document.getElementById(
     "auth_wrapper_form_password_warning"
   );
