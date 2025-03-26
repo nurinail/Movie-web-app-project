@@ -22,15 +22,14 @@ function getScreen(data){
     </div>
 </div>
 `
-    )).join("")
-};
-let bookmarkBtn=document.querySelectorAll(".recommended_banner_movies_item_img_bookmarkBtn");
-bookmarkBtn.forEach(btn=>{
-    btn.addEventListener("click",(e)=>{
-        e.preventDefault();
-        savesAllData=savesAllData.filter(data=>data.id!=btn.dataset.id);
-        localStorage.setItem("bookmarksData", JSON.stringify(savesAllData));
-        getScreen(savesAllData);
-        location.reload();
+    )).join("");
+    let bookmarkBtn=document.querySelectorAll(".recommended_banner_movies_item_img_bookmarkBtn");
+    bookmarkBtn.forEach(btn=>{
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
+            savesAllData=savesAllData.filter(data=>data.id!=btn.dataset.id);
+            localStorage.setItem("bookmarksData", JSON.stringify(savesAllData));
+            getScreen(savesAllData);
+        })
     })
-})
+};
