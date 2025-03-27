@@ -64,76 +64,6 @@
         @include font-style($--placeholder-color, 2rem, 400, 100%);
       }
     }
-    .trending_banner {
-      @include d-flex(flex-start, flex-start, column, 2.5rem);
-      width: 100%;
-      &_title {
-        @include font-style($--white-color, 3.2rem, 400, 100%);
-      }
-      &_movies {
-        width: 100%;
-        @include d-flex(flex-start, flex-start, row, 4rem);
-        overflow-x: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        &_item {
-          flex: 0 0 auto;
-          width: 32%;
-          height: 23rem;
-          border-radius: 1rem;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: 1rem;
-          &_opacity {
-            @include d-flex(flex-start, space-between, column, 0);
-            padding: 2.4rem;
-            border-radius: 1rem;
-            width: 100%;
-            height: 100%;
-            background-color: rgba($color: #000000, $alpha: 0.3);
-
-            &_save {
-              align-self: flex-end;
-              width: 3.2rem;
-              height: 3.2rem;
-              background-color: $--section-bg-color;
-              border-radius: 50%;
-              @include d-flex(center, center, row, 0);
-              &_btn {
-                &_icon {
-                  color: $--white-color;
-                }
-              }
-            }
-            &_about {
-              @include d-flex(flex-start, flex-start, column, 0.6rem);
-              &_info {
-                @include d-flex(center, flex-start, row, 0);
-                &_item {
-                  list-style-type: disc;
-                  @include font-style(
-                    rgba($color: #fff, $alpha: 0.8),
-                    1.5rem,
-                    400,
-                    100%
-                  );
-                  margin-right: 2rem;
-                }
-                &_item:first-child {
-                  list-style-type: none;
-                }
-              }
-              &_name {
-                @include font-style($--white-color, 2.4rem, 400, 100%);
-              }
-            }
-          }
-        }
-      }
-      &_movies::-webkit-scrollbar {
-        display: none;
-      }
-    }
     .recommended_banner {
       @include d-flex(flex-start, flex-start, column, 3.2rem);
       width: 100%;
@@ -142,13 +72,9 @@
       }
       &_movies {
         width: 100%;
-        @include d-flex(flex-start, flex-start, row, 4rem);
-        flex-wrap: wrap;
-        // border: 1px solid white;
+        @include d-grid(repeat(5,1fr),3rem);
         &_item {
-        // border: 1px solid white;
           @include d-flex(flex-start, space-between, column, 0);
-          width: 19%;
           height: 22.6rem;
           &_img {
             width: 100%;
